@@ -15,7 +15,7 @@ func main() {
 	}
 	defer nc.Close()
 
-	bytes, err := os.ReadFile("model.json")
+	bytes, err := os.ReadFile("publisher/model.json")
 	if err != nil {
 		log.Fatalf("Failed open file: %v", err)
 	}
